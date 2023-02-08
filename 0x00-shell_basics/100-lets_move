@@ -1,2 +1,2 @@
 #!/bin/bash
-mv *.html html_files/
+mv [A-Z]* /tmp/u
