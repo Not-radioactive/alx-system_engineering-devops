@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -U --group-directories-first --color=never | tr '/\n' ', ' | sed 's/, $/\n/'
+ls -1 | sort | tr '\n' ',' | sed 's/,$/\n/'
