@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | awk '/^[^\.]/ {printf "%s,", $0} /\/$/ {printf "%s,", $0} /^\./ {printf "%s,", $0} END {print ""}' | tr -d '\n' | sort | tr '\n' ',' | sed 's/,$/\n/'
+ls -amvp
