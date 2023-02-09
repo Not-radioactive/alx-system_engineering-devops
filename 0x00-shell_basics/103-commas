@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1 | sort | tr '\n' ',' | sed 's/,$/\n/'
+ls -1 | while read line; do if [ -d "$line" ]; then echo "$line/,"; else echo "$line,"; fi; done | sort -t, -k1,1
