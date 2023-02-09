@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "# School data file magic
+
+0 string SCHOOL School data" > school.mgc
+cp /bin/ls .
+echo "SCHOOL" > thisisaschoolfile
+
+echo "this is a text file" > thisisatextfile
+
+file --mime-type -m school.mgc *
+
+file -m school.mgc *
